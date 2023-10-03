@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    
+    <div class="calc row align-content-start text-center" >
+        <div class=" screen col-12 text-start"></div> 
+        <div class=" box special col-3 " onclick="clearS()">Ac</div>
+        <div class=" box special col-3" onclick="del()">Del</div>
+        <div class=" box special col-3"  onclick="operation('/')">/</div>
+        <div class=" box special col-3" onclick="operation('*')">x</div>
+        <div class=" box   col-3" onclick="insertNum(7)">7</div>
+        <div class=" box   col-3" onclick="insertNum(8)">8</div>
+        <div class=" box  col-3" onclick="insertNum(9)">9</div>
+        <div class=" box special   col-3" onclick="operation('-')">-</div>
+        <div class=" box   col-3" onclick="insertNum(4)">4</div>
+        <div class=" box   col-3" onclick="insertNum(5)">5</div>
+        <div class=" box   col-3" onclick="insertNum(6)">6</div>
+        <div class=" box special   col-3" onclick="operation('+')">+</div>
+        <div class=" box   col-3" onclick="insertNum(1)">1</div>
+        <div class=" box   col-3" onclick="insertNum(2)">2</div>
+        <div class=" box  col-3" onclick="insertNum(3)">3</div>
+        <div class=" box special col-3" onclick="operation('**')">^</div>
+        <div class="  box  col-6" onclick="insertNum(0)">0</div>
+        <div class=" box   col-3" onclick="insertNum('.')">.</div>
+        <div class="equal box special   col-3" onclick="equal()">=</div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
